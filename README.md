@@ -41,6 +41,26 @@ java KaprekarTest
 +-----------+----------------------+
 ```
 
+### Ejecución
+```
+Semillas generadas (válidas): [7603, 6961, 9289, 8185, 9557, 9514, 6489, 7164, 9017, 4326]
+
++-----------+----------------------+
+| Semilla   | Iteraciones a 6174   |
++-----------+----------------------+
+|     7603 |                    6 |
+|     6961 |                    6 |
+|     9289 |                    3 |
+|     8185 |                    6 |
+|     9557 |                    2 |
+|     9514 |                    3 |
+|     6489 |                    7 |
+|     7164 |                    1 |
+|     9017 |                    7 |
+|     4326 |                    7 |
++-----------+----------------------+
+```
+
 ## Notas
 - El método `sort(int[] a, boolean trace)` es in-place: **no** devuelve el array porque la modificación por referencia es suficiente y más eficiente.
 - Se descartan semillas con todos los dígitos iguales (ej. 1111) porque producen 0000 y no permiten iniciar el ciclo correcto.
